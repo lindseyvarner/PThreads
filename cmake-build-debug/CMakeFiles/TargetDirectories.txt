@@ -1,0 +1,3 @@
+/Users/lindseyvarner/PThreads/cmake-build-debug/CMakeFiles/PThreads.dir
+/Users/lindseyvarner/PThreads/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lindseyvarner/PThreads/cmake-build-debug/CMakeFiles/rebuild_cache.dir
