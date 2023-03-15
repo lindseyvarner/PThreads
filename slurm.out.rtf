@@ -1,0 +1,936 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red47\green180\blue29;\red46\green174\blue187;
+\red64\green11\blue217;\red180\green36\blue25;\red159\green160\blue28;\red200\green20\blue201;\red53\green137\blue255;
+\red47\green230\blue26;\red224\green228\blue9;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c20241\c73898\c14950;\cssrgb\c20199\c73241\c78251;
+\cssrgb\c32309\c18666\c88229;\cssrgb\c76411\c21697\c12527;\cssrgb\c68469\c68012\c14211;\cssrgb\c83397\c23074\c82666;\cssrgb\c25731\c61971\c100000;
+\cssrgb\c18000\c89947\c12925;\cssrgb\c90000\c90000\c0;}
+\margl1440\margr1440\vieww16640\viewh9980\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs30 \cf2 \CocoaLigature0 Last login: Fri Mar 10 15:39:48 on ttys000\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  mkdir PThreads\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  cd PThreads\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  git init\
+Initialized empty Git repository in /Users/lindseyvarner/PThreads/.git/\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  touch minions.c\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git add .\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git commit -m "Initial commit"\
+[main (root-commit) 2bb3cd6] Initial commit\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 minions.c\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  git push\
+fatal: No configured push destination.\
+Either specify the URL from the command-line or configure a remote repository using\
+\
+    git remote add <name> <url>\
+\
+and then push using the remote name\
+\
+    git push <name>\
+\
+
+\f1\b \cf6 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  git remote add origin https://github.com/lindseyvarner/PThreads.git\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  git branch -M main\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  git push -u origin main\
+Enumerating objects: 3, done.\
+Counting objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+To https://github.com/lindseyvarner/PThreads.git\
+ * [new branch]      main -> main\
+branch 'main' set up to track 'origin/main'.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  open minions.c\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  open minions.c\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  touch README.md\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git add .\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git commit -m "Add ReadMe and CMake"\
+[main dba7ea4] Add ReadMe and CMake\
+ 34 files changed, 3661 insertions(+)\
+ create mode 100644 .idea/.gitignore\
+ create mode 100644 .idea/PThreads.iml\
+ create mode 100644 .idea/misc.xml\
+ create mode 100644 .idea/modules.xml\
+ create mode 100644 .idea/vcs.xml\
+ create mode 100644 CMakeLists.txt\
+ create mode 100644 README.md\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/query/cache-v2\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/query/codemodel-v2\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/query/toolchains-v1\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/reply/cache-v2-45a11b1a139a42c3c2cc.json\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-6df83271dcd9d03b79c3.json\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-94e923cdb9c1358b95bd.json\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/reply/index-2023-03-14T22-01-03-0843.json\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/reply/target-PThreads-Debug-3be31a44c0b36329be01.json\
+ create mode 100644 cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-5896f1444c2b2e9a8321.json\
+ create mode 100644 cmake-build-debug/CMakeCache.txt\
+ create mode 100644 cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake\
+ create mode 100755 cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin\
+ create mode 100644 cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake\
+ create mode 100644 cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.c\
+ create mode 100644 cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.o\
+ create mode 100644 cmake-build-debug/CMakeFiles/CMakeError.log\
+ create mode 100644 cmake-build-debug/CMakeFiles/CMakeOutput.log\
+ create mode 100644 cmake-build-debug/CMakeFiles/TargetDirectories.txt\
+ create mode 100644 cmake-build-debug/CMakeFiles/clion-environment.txt\
+ create mode 100644 cmake-build-debug/CMakeFiles/clion-log.txt\
+ create mode 100644 cmake-build-debug/CMakeFiles/cmake.check_cache\
+ create mode 100644 cmake-build-debug/CMakeFiles/rules.ninja\
+ create mode 100644 cmake-build-debug/Testing/Temporary/LastTest.log\
+ create mode 100644 cmake-build-debug/build.ninja\
+ create mode 100644 cmake-build-debug/cmake_install.cmake\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  git push\
+Enumerating objects: 44, done.\
+Counting objects: 100% (44/44), done.\
+Delta compression using up to 8 threads\
+Compressing objects: 100% (39/39), done.\
+Writing objects: 100% (43/43), 23.97 KiB | 4.79 MiB/s, done.\
+Total 43 (delta 0), reused 0 (delta 0), pack-reused 0\
+To https://github.com/lindseyvarner/PThreads.git\
+   2bb3cd6..dba7ea4  main -> main\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  touch Makefile\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+1 warning generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions\
+Hello world\
+Hello world from thread\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git add .\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git commit -m "Add pthreads"        \
+[main aba5f95] Add pthreads\
+ 6 files changed, 47 insertions(+)\
+ create mode 100644 .DS_Store\
+ create mode 100644 Makefile\
+ create mode 100755 minions\
+ create mode 100644 minions.dSYM/Contents/Info.plist\
+ create mode 100644 minions.dSYM/Contents/Resources/DWARF/minions\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  git push\
+Enumerating objects: 14, done.\
+Counting objects: 100% (14/14), done.\
+Delta compression using up to 8 threads\
+Compressing objects: 100% (9/9), done.\
+Writing objects: 100% (12/12), 4.55 KiB | 4.55 MiB/s, done.\
+Total 12 (delta 1), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (1/1), done.\
+To https://github.com/lindseyvarner/PThreads.git\
+   dba7ea4..aba5f95  main -> main\
+
+\f1\b \cf3 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  valgrind ./minions\
+zsh: command not found: valgrind\
+
+\f1\b \cf6 \uc0\u10140   \cf4 PThreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 )
+\f0\b0 \cf2  cd ..\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  ssh lvarner1@hpc-student.uncc.edu  \
+ssh: Could not resolve hostname hpc-student.uncc.edu: nodename nor servname provided, or not known\
+
+\f1\b \cf6 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  ssh -llvarner1 hpc-student.uncc.edu\
+ssh: Could not resolve hostname hpc-student.uncc.edu: nodename nor servname provided, or not known\
+
+\f1\b \cf6 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  open colsort.c                      \
+The file /Users/lindseyvarner/colsort.c does not exist.\
+
+\f1\b \cf6 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  cd 3145\
+
+\f1\b \cf3 \uc0\u10140   \cf4 3145
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  open colsort.c\
+The file /Users/lindseyvarner/3145/colsort.c does not exist.\
+
+\f1\b \cf6 \uc0\u10140   \cf4 3145
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  cd cmake-build-debug\
+
+\f1\b \cf3 \uc0\u10140   \cf4 cmake-build-debug
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  open colsort.c\
+The file /Users/lindseyvarner/3145/cmake-build-debug/colsort.c does not exist.\
+
+\f1\b \cf6 \uc0\u10140   \cf4 cmake-build-debug
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  cd ..\
+
+\f1\b \cf3 \uc0\u10140   \cf4 3145
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  cd lvarner1-p1\
+
+\f1\b \cf3 \uc0\u10140   \cf4 lvarner1-p1
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  open colsort.c\
+
+\f1\b \cf3 \uc0\u10140   \cf4 lvarner1-p1
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  cd ..\
+
+\f1\b \cf3 \uc0\u10140   \cf4 3145
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  cd ..\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  cd pthreads\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 2\
+Hello world\
+Hello world from thread\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 2\
+Hello world\
+Hello world from thread\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+
+\f1\b minions.c:18:9: \cf8 warning: \cf2 incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+\f0\b0 \
+    int min = argv[1];\
+
+\f1\b \cf3         ^     ~~~~~~~
+\f0\b0 \cf2 \
+2 warnings generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+
+\f1\b minions.c:18:9: \cf8 warning: \cf2 incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+\f0\b0 \
+    int min = argv[1];\
+
+\f1\b \cf3         ^     ~~~~~~~
+\f0\b0 \cf2 \
+2 warnings generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+
+\f1\b minions.c:19:18: \cf8 warning: \cf2 format specifies type 'int' but the argument has type 'char *' [-Wformat]
+\f0\b0 \
+    printf("%c", min);\
+
+\f1\b \cf3             ~~   ^~~
+\f0\b0 \cf2 \
+\cf3             %s\cf2 \
+2 warnings generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+
+\f1\b minions.c:19:18: \cf8 warning: \cf2 format specifies type 'int' but the argument has type 'char *' [-Wformat]
+\f0\b0 \
+    printf("%d", min);\
+
+\f1\b \cf3             ~~   ^~~
+\f0\b0 \cf2 \
+\cf3             %s\cf2 \
+2 warnings generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+
+\f1\b minions.c:18:9: \cf8 warning: \cf2 incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+\f0\b0 \
+    int min = argv[1];\
+
+\f1\b \cf3         ^     ~~~~~~~
+\f0\b0 \cf2 \
+2 warnings generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+1 warning generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 2\
+2\
+Hello world\
+Hello world from thread\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 23\
+23\
+Hello world\
+Hello world from thread\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 23 3\
+Error: Bad command line parameters\
+
+\f1\b \cf6 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:5:17: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* foo(void* unused)\
+
+\f1\b \cf3                 ^
+\f0\b0 \cf2 \
+1 warning generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 23 3\
+Error: Bad command line parameters\
+
+\f1\b \cf6 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 0   \
+0\
+Hello world\
+Hello world from thread\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions -1\
+Error: Bad command line parameters\
+
+\f1\b \cf6 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:33:36: \cf6 error: \cf2 use of undeclared identifier 'foo'; did you mean 'for'?
+\f0\b0 \
+    pthread_create(&thread, &attr, foo, NULL);\
+
+\f1\b \cf3                                    ^~~
+\f0\b0 \cf2 \
+\cf3                                    for\cf2 \
+
+\f1\b minions.c:33:36: \cf6 error: \cf2 expected expression
+\f0\b0 \
+2 errors generated.\
+make: *** [minions] Error 1\
+
+\f1\b \cf6 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 0 \
+0\
+Hello world\
+[1]    15543 segmentation fault  ./minions 0\
+
+\f1\b \cf6 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:13:28: \cf8 warning: \cf2 unused parameter 'u' [-Wunused-parameter]
+\f0\b0 \
+void* overlord_print(void* u)\
+
+\f1\b \cf3                            ^
+\f0\b0 \cf2 \
+1 warning generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 0\
+0\
+Hello world\
+[1]    16420 segmentation fault  ./minions 0\
+
+\f1\b \cf6 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:13:28: \cf8 warning: \cf2 unused parameter 'u' [-Wunused-parameter]
+\f0\b0 \
+void* overlord_print(void* u)\
+
+\f1\b \cf3                            ^
+\f0\b0 \cf2 \
+1 warning generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 0\
+Hello Minions! I am the Overlord!\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 12\
+Hello! I am minion 0\
+Hello! I am minion 2\
+Hello! I am minion 3\
+Hello! I am minion 6\
+Hello! I am minion 7\
+Hello! I am minion 1\
+Hello! I am minion 8\
+Hello! I am minion 9\
+Hello! I am minion 5\
+Hello! I am minion 4\
+Hello! I am minion 10\
+Hello! I am minion 11\
+Hello Minions! I am the Overlord!\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git add .\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git commit -m "Complete program"\
+[main 8f259a7] Complete program\
+ 3 files changed, 55 insertions(+), 8 deletions(-)\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git push\
+Enumerating objects: 17, done.\
+Counting objects: 100% (17/17), done.\
+Delta compression using up to 8 threads\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (9/9), 4.14 KiB | 4.14 MiB/s, done.\
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.\
+To https://github.com/lindseyvarner/PThreads.git\
+   aba5f95..8f259a7  main -> main\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  open Makefile\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:13:28: \cf8 warning: \cf2 unused parameter 'unused' [-Wunused-parameter]
+\f0\b0 \
+void* overlord_print(void* unused)\
+
+\f1\b \cf3                            ^
+\f0\b0 \cf2 \
+1 warning generated.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./minions 12                    \
+Hello! I am minion 0\
+Hello! I am minion 3\
+Hello! I am minion 2\
+Hello! I am minion 4\
+Hello! I am minion 1\
+Hello! I am minion 5\
+Hello! I am minion 6\
+Hello! I am minion 8\
+Hello! I am minion 10\
+Hello! I am minion 11\
+Hello! I am minion 7\
+Hello! I am minion 9\
+Hello Minions! I am the Overlord!\
+
+\f1\b \cf3 \uc0\u10140   \cf4 pthreads
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  cd ..\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  ssh lvarner1@hpc-student.uncc.edu  \
+Connected.\
+\
+(lvarner1@hpc-student.uncc.edu) Password: \
+(lvarner1@hpc-student.uncc.edu) Duo two-factor login for lvarner1\
+\
+Enter a passcode or select one of the following options:\
+\
+ 1. Duo Push to XXX-XXX-6718\
+ 2. Phone call to XXX-XXX-6718\
+ 3. SMS passcodes to XXX-XXX-6718\
+\
+Passcode or option (1-3): 1\
+Success. Logging you in...\
+\
+                     University Research Computing     \
+	          Information and Technology Services  \
+	       University of North Carolina at Charlotte\
+\
+  NOTICE \
+  "Use of the University's computing and electronic communication\
+  resources is conditioned on compliance with the University's\
+  Information Technology (IT) policies (Policy Statements 8, 10,\
+  20, 66, 67, and 102).  Pursuant to those policies, the University\
+  will take any steps necessary to safeguard the integrity of the\
+  University's computing and electronic resources and to minimize\
+  the risks to both those resources and the end users of those\
+  resources.  Such safeguarding includes monitoring data traffic\
+  to detect anomalous network activity, as well as accessing,\
+  retrieving, reading, and/or disclosing data communications when\
+  there is reasonable cause to suspect a violation of applicable\
+  University policy or criminal law, or when monitoring is\
+  otherwise required or permitted by law."\
+ \
+\
+============================================================================\
+                     Red Hat Enterprise Linux 8.3\
+============================================================================\
+\
+Last login: Sat Feb 11 22:12:44 2023 from 10.38.131.18\
+[lvarner1@gal-i1 ~]$ ls\
+\cf9 hello\cf2   \cf9 Project1\cf2 \
+[lvarner1@gal-i1 ~]$ sftp> pwd\
+usage: sftp [-46aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]\
+          [-D sftp_server_path] [-F ssh_config] [-i identity_file]\
+          [-J destination] [-l limit] [-o ssh_option] [-P port]\
+          [-R num_requests] [-S program] [-s subsystem | sftp_server]\
+          destination\
+[lvarner1@gal-i1 ~]$ cd ..\
+[lvarner1@gal-i1 users]$ logout\
+Connection to hpc-student.uncc.edu closed.\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  sftp lvarner1@hpc-student.uncc.edu\
+Connected.\
+\
+(lvarner1@hpc-student.uncc.edu) Password: \
+(lvarner1@hpc-student.uncc.edu) Duo two-factor login for lvarner1\
+\
+Enter a passcode or select one of the following options:\
+\
+ 1. Duo Push to XXX-XXX-6718\
+ 2. Phone call to XXX-XXX-6718\
+ 3. SMS passcodes to XXX-XXX-6718\
+\
+Passcode or option (1-3): 1\
+Connected to hpc-student.uncc.edu.\
+sftp> lpwd\
+Local working directory: /Users/lindseyvarner\
+sftp> mkdir Project2\
+sftp> put minions.c\
+stat minions.c: No such file or directory\
+sftp> vim minions.c\
+Invalid command.\
+sftp> vim\
+Invalid command.\
+sftp> exit\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  ssh lvarner1@hpc-student.uncc.edu\
+Connected.\
+\
+(lvarner1@hpc-student.uncc.edu) Password: \
+(lvarner1@hpc-student.uncc.edu) Duo two-factor login for lvarner1\
+\
+Enter a passcode or select one of the following options:\
+\
+ 1. Duo Push to XXX-XXX-6718\
+ 2. Phone call to XXX-XXX-6718\
+ 3. SMS passcodes to XXX-XXX-6718\
+\
+Passcode or option (1-3): 1\
+Success. Logging you in...\
+\
+                     University Research Computing     \
+	          Information and Technology Services  \
+	       University of North Carolina at Charlotte\
+\
+  NOTICE \
+  "Use of the University's computing and electronic communication\
+  resources is conditioned on compliance with the University's\
+  Information Technology (IT) policies (Policy Statements 8, 10,\
+  20, 66, 67, and 102).  Pursuant to those policies, the University\
+  will take any steps necessary to safeguard the integrity of the\
+  University's computing and electronic resources and to minimize\
+  the risks to both those resources and the end users of those\
+  resources.  Such safeguarding includes monitoring data traffic\
+  to detect anomalous network activity, as well as accessing,\
+  retrieving, reading, and/or disclosing data communications when\
+  there is reasonable cause to suspect a violation of applicable\
+  University policy or criminal law, or when monitoring is\
+  otherwise required or permitted by law."\
+ \
+\
+============================================================================\
+                     Red Hat Enterprise Linux 8.3\
+============================================================================\
+\
+Last login: Tue Mar 14 21:39:46 2023 from 10.38.128.137\
+[lvarner1@gal-i1 ~]$ vim minions.c\
+[lvarner1@gal-i1 ~]$ ls\
+\cf9 hello\cf2   minions.c  \cf9 Project1\cf2   \cf9 Project2\cf2   pwd\
+[lvarner1@gal-i1 ~]$ rm pwd\
+[lvarner1@gal-i1 ~]$ ls\
+\cf9 hello\cf2   minions.c  \cf9 Project1\cf2   \cf9 Project2\cf2 \
+[lvarner1@gal-i1 ~]$ cd Project2\
+[lvarner1@gal-i1 Project2]$ vim minions.c\
+[lvarner1@gal-i1 Project2]$ ls\
+minions.c\
+[lvarner1@gal-i1 Project2]$ cd ..\
+[lvarner1@gal-i1 ~]$ rm minions.c\
+[lvarner1@gal-i1 ~]$ ls\
+\cf9 hello\cf2   \cf9 Project1\cf2   \cf9 Project2\cf2 \
+[lvarner1@gal-i1 ~]$ cd Project2\
+[lvarner1@gal-i1 Project2]$ vim Makefile\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c\
+[lvarner1@gal-i1 Project2]$ ./minions.c 0\
+-bash: ./minions.c: Permission denied\
+[lvarner1@gal-i1 Project2]$ sinfo\
+PARTITION  AVAIL  TIMELIMIT  NODES  STATE NODELIST\
+Centaurus*    up 30-00:00:0     13   idle gal-bm1,gal-c[1-12]\
+GPU           up 30-00:00:0      7   idle gal-gpu[1-4,9-11]\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ sbatch test.sh\
+Submitted batch job 65943\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c  slurm-65943.out  test.sh\
+[lvarner1@gal-i1 Project2]$ cat slurm-65943.out\
+/var/spool/slurm/slurmd/job65943/slurm_script: line 7: ./minions: No such file or directory\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ rm slurm-65943.out\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c  test.sh\
+[lvarner1@gal-i1 Project2]$ sbatch test.sh\
+Submitted batch job 65945\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c  slurm-65945.out  test.sh\
+[lvarner1@gal-i1 Project2]$ cat slurm-65945.out\
+/var/spool/slurm/slurmd/job65945/slurm_script: line 7: minions: command not found\
+[lvarner1@gal-i1 Project2]$ vim slurm-65945.out\
+[lvarner1@gal-i1 Project2]$ rm slurm-65945.out\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ sbatch test.sh\
+Submitted batch job 65946\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c  slurm-65946.out  test.sh\
+[lvarner1@gal-i1 Project2]$ cat slurm-65946.out\
+/var/spool/slurm/slurmd/job65946/slurm_script: line 7: /users/lvarner1/Project2/minions: No such file or directory\
+/var/spool/slurm/slurmd/job65946/slurm_script: line 8: ./minions: No such file or directory\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ rm slurm-65946.out\
+[lvarner1@gal-i1 Project2]$ sbatch test.sh\
+Submitted batch job 65949\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c  slurm-65949.out  test.sh\
+[lvarner1@gal-i1 Project2]$ cat slurm-65949.out\
+/var/spool/slurm/slurmd/job65949/slurm_script: line 7: /users/lvarner1/minions: No such file or directory\
+[lvarner1@gal-i1 Project2]$ rm slurm-65949.out\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ sbatch test.sh\
+Submitted batch job 65950\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c  slurm-65950.out  test.sh\
+[lvarner1@gal-i1 Project2]$ cat slurm-65950.out\
+/var/spool/slurm/slurmd/job65950/slurm_script: line 7: ./minions: No such file or directory\
+[lvarner1@gal-i1 Project2]$ rm slurm-65950.out\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ sbatch test.sh\
+Submitted batch job 65951\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  minions.c  slurm-65951.out  test.sh\
+[lvarner1@gal-i1 Project2]$ cat slurm-65951.out\
+/var/spool/slurm/slurmd/job65951/slurm_script: line 7: minions: command not found\
+[lvarner1@gal-i1 Project2]$ rm slurm-65951.out\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ make\
+gcc -Wall -Wextra -g minions.c -o minions -pthread\
+
+\f1\b minions.c:
+\f0\b0  In function \'91
+\f1\b overlord_print
+\f0\b0 \'92:\
+
+\f1\b minions.c:13:28:
+\f0\b0  
+\f1\b \cf8 warning: 
+\f0\b0 \cf2 unused parameter \'91
+\f1\b unused
+\f0\b0 \'92 [
+\f1\b \cf8 -Wunused-parameter
+\f0\b0 \cf2 ]\
+ void* overlord_print(
+\f1\b \cf8 void* unused
+\f0\b0 \cf2 )\
+                      
+\f1\b \cf8 ~~~~~~^~~~~~
+\f0\b0 \cf2 \
+[lvarner1@gal-i1 Project2]$ rm slurm-65951.out\
+rm: cannot remove 'slurm-65951.out': No such file or directory\
+[lvarner1@gal-i1 Project2]$ vim test.sh\
+[lvarner1@gal-i1 Project2]$ sbatch test.sh\
+Submitted batch job 65952\
+[lvarner1@gal-i1 Project2]$ ls\
+Makefile  \cf10 minions\cf2   minions.c  slurm-65952.out  test.sh\
+[lvarner1@gal-i1 Project2]$ cat slurm-65951.out\
+cat: slurm-65951.out: No such file or directory\
+[lvarner1@gal-i1 Project2]$ cat slurm-65952.out\
+Hello! I am minion 0\
+Hello! I am minion 2\
+Hello! I am minion 1\
+Hello! I am minion 4\
+Hello! I am minion 3\
+Hello! I am minion 5\
+Hello! I am minion 6\
+Hello! I am minion 7\
+Hello! I am minion 8\
+Hello! I am minion 9\
+Hello! I am minion 10\
+Hello! I am minion 11\
+Hello! I am minion 12\
+Hello! I am minion 13\
+Hello! I am minion 14\
+Hello! I am minion 15\
+Hello! I am minion 16\
+Hello! I am minion 17\
+Hello! I am minion 18\
+Hello! I am minion 19\
+Hello! I am minion 20\
+Hello! I am minion 21\
+Hello! I am minion 22\
+Hello! I am minion 23\
+Hello! I am minion 24\
+Hello! I am minion 25\
+Hello! I am minion 26\
+Hello! I am minion 27\
+Hello! I am minion 28\
+Hello! I am minion 29\
+Hello! I am minion 30\
+Hello! I am minion 31\
+Hello! I am minion 32\
+Hello! I am minion 33\
+Hello! I am minion 34\
+Hello! I am minion 35\
+Hello! I am minion 36\
+Hello! I am minion 37\
+Hello! I am minion 38\
+Hello! I am minion 39\
+Hello Minions! I am the Overlord!\
+[lvarner1@gal-i1 Project2]$ vim slurm-65952.out\
+\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 11\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 12\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 13\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 14\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 15\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 16\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 17\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 18\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 19\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 20\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 21\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 22\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 23\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 24\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 25\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 26\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 27\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 28\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 29\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 30\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 31\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 32\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 33\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 34\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 35\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 36\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 37\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 38\
+Hello! I am m\cb11 i\cb1 n\cb11 i\cb1 on 39\
+Hello M\cb11 i\cb1 n\cb11 i\cb1 ons! I am the Overlord!\
+                                                                                                     41,1          Bot\
+}
